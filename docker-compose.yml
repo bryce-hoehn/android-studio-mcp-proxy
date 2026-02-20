@@ -1,9 +1,9 @@
 services:
-  android-studio-llm-proxy:
+  android-studio-mcp-proxy:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: android-studio-llm-proxy
+    container_name: android-studio-mcp-proxy
     ports:
       - "5555:5555"
     volumes:
