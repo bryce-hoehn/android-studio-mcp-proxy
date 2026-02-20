@@ -1,0 +1,11 @@
+services:
+  android-studio-llm-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: android-studio-llm-proxy
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./mcp_settings.json:/app/config/mcp_settings.json:ro,z
+    restart: unless-stopped
