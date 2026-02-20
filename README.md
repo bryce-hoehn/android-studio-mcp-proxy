@@ -65,6 +65,7 @@ docker-compose restart
        "context7": {
          "httpUrl": "http://localhost:5555/mcp/context7"
        }
+     }
    }
     ```
 
