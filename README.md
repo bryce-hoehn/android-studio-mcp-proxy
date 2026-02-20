@@ -1,4 +1,4 @@
-# Android Studio LLM Proxy
+# Android Studio MCP Proxy
 
 A FastAPI server for using local MCP servers in Android Studio
 
@@ -58,8 +58,15 @@ docker-compose restart
    - Replace `{server_name}` with the name from your `mcp_settings.json` (e.g., `context7`)
 
 3. **Example Configuration:**
-   - Server Name: `Context7 Docs`
-   - Server URL: `http://localhost:5555/mcp/context7`
+  
+   ```json
+   {
+     "mcpServers": {
+       "context7": {
+         "httpUrl": "http://localhost:5555/mcp/context7"
+       }
+   }
+    ```
 
 ## API Endpoints
 
